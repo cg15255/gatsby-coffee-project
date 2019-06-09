@@ -1,28 +1,63 @@
 :root {
-    --mainBrown: #2d1ef1;
-    --mainYellow: #ff9e09;
-    --mainGrey: #ece8dc;
-    --mainWhite: #fff;
-    --mainDark: #222;
+  --mainBrown: #2d1e1f;
+  --mainYellow: rgb(255, 158, 9);
+  --mainGrey: rgb(236, 232, 220);
+  --mainWhite: #fff;
+  --mainDark: #222;
 }
 
 body {
-    background: var(--mainWhite);
-    color: var(--mainDark);
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Courier New', Courier, monospace !important;
-    letter-spacing: 0.25rem !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
 }
 
 .text-yellow {
-    color: var(--mainYellow);
+  color: var(--mainYellow);
 }
 
 .cart-icon {
-    cursor: pointer;
-    color: var(--mainYellow);
-    font-size: 2rem;
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
+
+.default-background,
+.about-background {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  opacity: 1 !important;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-size: cover;
+  background-position: center;
+}
+
+.about-background {
+  min-height: 60vh;
+}
+
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
+}
+
+.footer {
+  background: var(--mainBrown);
 }
